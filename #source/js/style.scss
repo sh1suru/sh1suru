@@ -1,0 +1,71 @@
+@import "../osnova/nav/style.scss";
+
+@import "../osnova/main.body/style.scss";
+
+hr{
+	margin:20px 0;
+   color:#999;
+}
+
+.light-theme{
+	background-image: url(../images/bg.jpg);
+   background-attachment: fixed;
+}
+
+.dark-theme{
+   background-color: #222;
+}
+
+header ul{
+	display: flex;
+	justify-content: space-around;
+	margin-left: 0 !important;
+	list-style: none;
+	& a{
+		font-size: 30px !important;
+    	text-decoration: none;
+	}
+	& li{
+		display: inline-block;
+    	transition: 0.4s;
+	}
+	& li:hover{
+		transform: scale(1.2) !important;
+	}
+}
+
+pre{
+	color:#555;
+   background:rgba(254,254,214,0.5);
+   border-left:1px dashed #1a8202;
+	& code{
+		display: block;
+		overflow: auto;
+		white-space: pre;
+		font: 14px "Courier New",Courier,mono!important;
+		margin:10px 20px;
+		padding:10px;
+	}
+}
+
+.alert_img{
+	display: block;
+	margin: auto;
+   width: 550px;
+}
+
+.do_while_img, .while_img, .for_img, .if, .switch{
+	display: flex;
+	& img{
+		width: 450px;
+	}
+}
+
+.kod{
+	color:rgb(0, 170, 170);
+}
+
+.scrollimg{
+	width: 550px;
+    margin: 0 0 0 75px;
+}

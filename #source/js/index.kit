@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="../img/Amnesia-anime.png" rel="shortcut icon" type="image/x-icon">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>sh1suru</title>
+</head>
+<body>
+	<!-- @import "../osnova/nav/index.kit" -->
+<main>
+	<header>
+		<h1>Конспект JavaScript</h1>
+		<ul>
+			<li><a href="#alert" data-scroll="#alert">alert</a></li>
+			<li><a href="#prompt" data-scroll="#prompt">prompt</a></li>
+			<li><a href="#confirm" data-scroll="#confirm">confirm</a></li>
+			<li><a href="#if_else" data-scroll="#if_else">if else</a></li>
+			<li><a href="#switch" data-scroll="#switch">switch</a></li>
+			<li><a href="#for" data-scroll="#for">for</a></li>
+			<li><a href="#while" data-scroll="#while">while</a></li>
+			<li><a href="#do_while" data-scroll="#do_while">do while</a></li>
+			<li><a href="#thema" data-scroll="#thema">Смена Темы</a></li>
+			<li><a href="#scroll" data-scroll="#scroll">Плавный Scroll</a></li>
+		</ul>
+	</header>
+	<h2 id="alert">alert</h2>
+		<p>
+			Выводит диалоговое окно с вашим текстом
+		</p>
+		<p>
+			Пример кода:
+		</p>
+		<img class="alert_img" src="images/align1.jpg" alt="пример кода">
+		<p>
+			Результат в браузере
+		</p>
+		<img class="alert_img" src="images/align2.png" alt="результат как видно в браузере"><br>
+		<img class="alert_img" src="images/align3.jpg" alt="">
+		<hr>
+		<h2 id="prompt">prompt</h2>
+		<p>
+			prompt - функция для отображения модального окна с текстом и полем ввода для текста<br>
+			функция возвращает текст, который ввел пользователь, или null, если пользователь ничего не ввел<br>
+			Вносит данные в переменные
+		</p>
+		<p>Пример кода:</p>
+		<img class="alert_img" src="images/prompt1.jpg" alt="пример кода">
+		<p>Результат в браузере</p>
+		<img class="alert_img" src="images/prompt2.png" alt="результат как видно в браузере"><br>
+		<img class="alert_img" src="images/prompt3.jpg" alt="">
+		<hr>
+		<h2 id="confirm">confirm</h2>
+		<p>
+			confirm - функция для отображения модального окна с текстом и двумя кнопками - Ok и Cancel<br>
+			При нажатии на одну из кнопок в модальном окне, окно закрывается и возвращает логическое значение true, если
+			была нажата кнопка OK,<br>
+			или значение false - если была нажата кнопка Cancel
+		</p>
+		<p>Пример кода:</p>
+		<img class="alert_img" src="images/confirm1.jpg" alt="пример кода">
+		<p>Результат в браузере</p>
+		<img class="alert_img" src="images/confirm2.png" alt="результат как видно в браузере"><br>
+		<img class="alert_img" src="images/confirm3.jpg" alt="">
+		<hr>
+		<h2 id="if_else">if else</h2>
+		<p>Оператор if позволяет выполнить блок кода, если выражение в круглых скобках дает результат true </p>
+		<div class="if">
+			<img class="alert_img" src="images/if else 1.jpg" alt="Пример_кода">
+			<img class="alert_img" src="images/if else.jpg" alt="Структура_if">
+		</div>
+		<p>
+			else - необязательный оператор, который можно использовать после оператора if<br>
+			Блок else будет выполняться только в том случае, если условие ложно в блоке if
+		</p>
+		<div class="if">
+			<img class="alert_img" src="images/if else 2.jpg" alt="Пример_кода">
+			<img class="alert_img" src="images/if else 5.jpg" alt="Структура_else">
+		</div>
+		<p>
+			Если необходимо выполнить несколько проверок и только одна проверка может быть успешной<br>
+			можно использовать несколько выражений if ... else if<br>
+			Блоков else if может быть неограниченное количество
+		</p>
+		<div>
+			<img class="alert_img" src="images/if else 3.jpg" alt="Пример_кода">
+		</div>
+		<hr>
+		<h2 id="switch">switch</h2>
+		<p>
+			switch - условная конструкция, заменяющая несколько конструкций if<br>
+   		Эта конструкция позволяет выполнить блок кода после выполнения точного сравнения результата выражения с несколькими вариантами
+		</p>
+		<div class="switch">
+			<img class="alert_img" src="images/switch 1.jpg" alt="Пример_кода">
+			<img class="alert_img" src="images/switch.jpg" alt="Стркутура_switch">
+		</div>
+		<p>
+			default - блок, который выполнится если не подошло ни одно значение из блоков case
+		</p>
+		<div class="switch">
+			<img class="alert_img" src="" alt="Пример_кода">
+			<img class="alert_img" src="images/defoult.jpg" alt="Стркутура_default">
+		</div>
+		<p>
+			если ключевое слово break не используется, то инструкции продолжат выполняться ниже в следующих case<br>
+        	обычно, блок case не использует break, когда для нескольких значений необходимо выполнить одни и те же инструкции 
+		</p>
+		<img class="alert_img" src="images/switch 2.jpg" alt="Пример_кода">
+		<p>
+			В switch используется строгое сравнение (значения в выражениях switch и case должны быть одного и того же типа)
+		</p>
+		<img class="alert_img" src="images/switch 3.jpg" alt="Пример_кода">
+		<hr>
+		<h2>Цыклы</h2>
+		<h2 id="for">for</h2>
+		<p>
+			for – цикл со счетчиком. Этот цикл содержит счетчик итераций цикла, с определенным шагом, который изменяет свое значение до заданного конечного значения.
+		</p>
+		<p>Цикл for позволяет запустить цикл на указанное количество итераций<br>
+			for(начало; условие; операция) { /*тело цикла*/ }<br>
+			цикл for выполняется до тех пор, пока условие истинно, после каждой итерации происходит выполнение операции и повторная проверка условия
+		</p>
+		<div class="for_img">
+		<img class="alert_img" src="images/for cod-2.jpg" alt="">
+		<img class="alert_img" src="images/for.jpg" alt="">
+		<img class="alert_img" src="images/for-2.jpg" alt="">
+		</div>
+		<hr>
+		<h2 id="while">while</h2>
+		<p>
+			while – цикл с предусловием. Выполняется пока условие истинно.<br>
+			while(условие) { /*тело цикла*/ }<br>
+			тело цикла выполняется до тех пор, пока условие истинно<br>
+			одно выполнение тела цикла называется итерацией<br>
+		   Если условие всегда истинно - цикл бесконечный браузер предложит остановить выполнение подобного сценария
+		</p>
+		<div class="while_img">
+			<img class="alert_img" src="images/while-2.jpg" alt="">
+			<img class="alert_img" src="images/Цыклы-2.jpg" alt="">
+			<img class="alert_img" src="images/while-5.jpg" alt="">
+		</div>
+		<hr>
+		<h2 id="do_while">do while</h2>
+		<p>
+			do while – цикл с постусловием. Выполняется пока условие истинно.<br>
+			Условие проверяется после тела.<br>
+			Цикл do/while работает так же, как и while, но выполняет вначале итерацию, а потом проверяет условие
+		</p>
+		<div class="do_while_img">
+			<img class="alert_img" src="images/do while-1.jpg" alt="">
+			<img class="alert_img" src="images/do while-3.jpg" alt="">
+			<img class="alert_img" src="images/do whili-2.jpg" alt="">
+		</div>
+		<h2 id="thema">Смена темы</h2>
+		<p>Меняем тему страницы на противоположную и назад.</p>
+		<img class="alert_img" src="images/thema.jpg" alt="cod">
+		<p><button class="theme-button">Тема</button></p>
+		<p><span class="kod">let page = document.querySelector('.body')</span> создаем переменую с елементом где будем изменять тему</p>
+		<p><span class="kod">let themeButton = document.querySelector('.theme-button')</span> создаем переменую кнопки</p>
+		<p><span class="kod">themeButton.onclick = function</span> При нажатии на кнопку запускаем функцию</p>
+		<p><span class="kod">page.classList.toggle('dark-theme');</span> Меняем тему на темную</p>
+		<p><span class="kod">page.classList.toggle('light-theme');</span> Меняем тему на светлую</p>
+		<hr>
+		<h2 id="scroll">Плавный скрол</h2>
+		<img class="scrollimg" src="images/scrollhtml.jpg" alt="Код HTML">
+		<img class="scrollimg" src="images/scrolljv.jpg" alt="Код JavaScript">
+		<p><span class="kod">$("[data-scroll]").on("click", function(event){</span> при нажатии на <span class="kod">data-scroll</span> запускает функцию</p>
+		<p><span class="kod">event.preventDefult();</span> отменяем стандартное поведения силок</p>
+		<p><span class="kod">blockoffset = $(blockId).offset().top</span> получаем смещение с верха страницы к якорю</p>
+		<p><span class="kod">scrollTop: blockOffset -50</span> добавляем анимацию скрола. Значения <span class="kod">-50</span> отнимаем 50 пикселей чтобы блок был по середине екрана</p>
+		<p><span class="kod">700</span> Задаем скорость прокрутки в милисекундах</p>
+		<p>Нужно к елементу добавить  <span class="kod">data-scroll =</span> и якорь куда скролить</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
